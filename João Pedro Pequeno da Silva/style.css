@@ -8,7 +8,7 @@
 }
 
 nav {
-    box-shadow:0px 3px 0px 0px;
+    box-shadow: 0px 3px 0px 0px;
     width: 100%;
     margin: 0 auto;
     align-self: center;
@@ -70,20 +70,29 @@ p {
     line-height: 25px;
 }
 
+
 /* ---------------------------------------------------------- */
 /* Recursos usados para o css do main */
 main div {
     margin-top: 10px;
     display: flex;
-    
 
+
+}
+
+a {
+    scroll-behavior: smooth;
+    animation: normal 1ms;
 }
 
 main div img {
     width: 56%;
     margin: 0 auto;
     box-shadow: 3px 1px 11px 0px;
+    border-radius: 100%;
+    display: flex;
 }
+
 
 .texto_sobre {
     margin: 10px auto;
@@ -93,8 +102,11 @@ main div img {
 }
 
 h2 {
+    margin-top: 20px;
     font-size: larger;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
 }
 
 .foto_central {
@@ -123,6 +135,7 @@ form div {
 strong {
     align-content: center;
 }
+
 div .titulo {
     display: flex;
     color: black;
@@ -177,46 +190,77 @@ footer span {
     display: flex;
     justify-content: center;
 }
+i{ 
+    opacity: 40%;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+li i:hover{
+    opacity: 100%;
+    transition: .2s;
+    transform: scale(1.0);
+
+}
 /* 
     Responsividade
 */
-@media only screen and (max-device-width: 500px) {
-    main div{
+@media only screen and (max-device-width: 763px) {
+    main div {
         flex-direction: column;
     }
-    .texto_sobre{
+
+    main div img {
+        width: 30%;
+        margin: 0 auto;
+        box-shadow: 3px 1px 11px 0px;
+        border-radius: 100%;
+        display: flex;
+    }
+
+    .texto_sobre {
         font-size: medium;
         width: auto;
         margin: 10px;
     }
+
     .foto_central {
-        width:auto;
+        width: auto;
     }
-    .entrar ul{
-            width: auto;
-            list-style: none;
-            display: inline-flex;
-            margin: 10px;
-            align-items: center;
-            flex-direction: row;
-            justify-content: flex-end;
+
+    .entrar ul {
+        width: auto;
+        list-style: none;
+        display: inline-flex;
+        margin: 10px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
     }
+
     h1 {
         font-size: xx-large;
         color: white;
         align-self: center;
         margin: 0 auto;
+        padding: 10px;
     }
+
     .lista {
         display: flex;
         margin: 10px auto;
         justify-content: center;
         flex-direction: column;
     }
+
     ul li a {
         font-size: smaller;
         text-decoration: none;
         color: whitesmoke;
     }
+
+    i.devicon-figma-plain.colored {
+        font-size: xx-large;
+    }
 }
+
 /* --------------------------------------------------- */
