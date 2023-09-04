@@ -8,6 +8,7 @@
 }
 
 nav {
+    box-shadow:0px 3px 0px 0px;
     width: 100%;
     margin: 0 auto;
     align-self: center;
@@ -74,12 +75,14 @@ p {
 main div {
     margin-top: 10px;
     display: flex;
+    
 
 }
 
 main div img {
     width: 56%;
     margin: 0 auto;
+    box-shadow: 3px 1px 11px 0px;
 }
 
 .texto_sobre {
@@ -175,3 +178,46 @@ footer span {
     display: flex;
     justify-content: center;
 }
+/* 
+    Responsividade
+*/
+@media only screen and (max-device-width: 500px) {
+    main div{
+        flex-direction: column;
+    }
+    .texto_sobre{
+        font-size: medium;
+        width: auto;
+        margin: 10px;
+    }
+    .foto_central {
+        width:auto;
+    }
+    .entrar ul{
+            width: auto;
+            list-style: none;
+            display: inline-flex;
+            margin: 10px;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-end;
+    }
+    h1 {
+        font-size: xx-large;
+        color: white;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .lista {
+        display: flex;
+        margin: 10px auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+    ul li a {
+        font-size: smaller;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
+/* --------------------------------------------------- */
