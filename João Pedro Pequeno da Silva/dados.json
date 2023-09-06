@@ -1,0 +1,14 @@
+[
+            {
+                "nome": "Nubank Ionic",
+                "desc": "Esse projeto foi desenvolvido enquanto aprendia um pouco sobre o Framework do Ionic, no qual consegui desenvolver habilidades"
+            },
+            {
+                "nome": "Svelte Calculator",
+                "desc": "Esse projeto foi desenvolvido enquanto aprendia um pouco sobre o Framework do Svelte, no qual consegui desenvolver habilidades"
+            },
+            {
+                "nome": "Conversor JS",
+                "desc": "Esse projeto foi desenvolvido enquanto aprendia um pouco sobre JavaScript, no qual consegui desenvolver habilidades durante meu curso da alura"
+            }
+]

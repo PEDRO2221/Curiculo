@@ -4,7 +4,7 @@
     Css para o nav da página
 */
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 nav {
@@ -144,6 +144,8 @@ div .titulo {
     align-items: center;
     justify-content: center;
     line-height: normal;
+    font-family: 'DM Sans', sans-serif;
+    ;
 }
 
 .lista {
@@ -155,7 +157,7 @@ div .titulo {
 
 .linguagem {
     display: flex;
-    margin: 10px auto;
+    margin: 0 auto;
     color: black;
     justify-content: center;
 }
@@ -190,23 +192,41 @@ footer span {
     display: flex;
     justify-content: center;
 }
-i{ 
-    opacity: 40%;
-    font-size: xx-large;
+
+i {
+    font-size: x-large;
     transition: 0.5s;
 }
-li i:hover{
-    opacity: 100%;
-    transition: .2s;
-    transform: scale(1.0);
 
+li i:hover {
+    transition: 1s;
+    font-size: 50px;
 }
+
+.github_descricao {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* 
     Responsividade
 */
-@media only screen and (max-device-width: 763px) {
+@media only screen and (max-device-width: 952px) {
     main div {
         flex-direction: column;
+    }
+
+    li i {
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: xx-large;
+        transition: 0.5s;
+    }
+
+    li i:hover {
+        margin: 0 auto;
+        transition: 1s;
+        font-size: 50px;
     }
 
     main div img {
@@ -247,8 +267,14 @@ li i:hover{
 
     .lista {
         display: flex;
+        display: inline-flex;
         margin: 10px auto;
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .linguagem {
+        display: flex;
         flex-direction: column;
     }
 
@@ -256,10 +282,6 @@ li i:hover{
         font-size: smaller;
         text-decoration: none;
         color: whitesmoke;
-    }
-
-    i.devicon-figma-plain.colored {
-        font-size: xx-large;
     }
 }
 
